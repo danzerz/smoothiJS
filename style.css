@@ -1,59 +1,60 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Ensures consistent box sizing */
 }
+
 body {
-  font-family: "Courier New", Courier, monospace;
-  background: url("./space-for-text-on-textured-background-surrounded-by-delicious-smoothies-from-top-view-background-image-ai-generated-photo.jpg")
-    no-repeat center center fixed; /* Background image */
-  background-size: cover;
-  color: #dedede;
+  font-family: "Courier New", Courier, monospace; /* Sets font */
+  background: url("path/to/image") no-repeat center center fixed; /* Background image */
+  background-size: cover; /* Ensures the image covers the entire screen */
+  color: #dedede; /* Text color */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  height: 100vh; /* Full viewport height */
 }
+
 body::before {
-  content: "";
+  content: ""; /* Creates overlay */
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(8px);
-  z-index: -1;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  backdrop-filter: blur(8px); /* Blurs the background */
+  z-index: -1; /* Ensures overlay is behind content */
 }
 
 form {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Vertical form layout */
   justify-content: flex-start;
   align-items: center;
-  gap: 20px;
-  width: 90%;
+  gap: 20px; /* Space between elements */
+  width: 90%; /* Full width with max width */
   max-width: 400px;
   padding: 20px;
-  border: 5px solid #e63946;
-  border-radius: 15px;
-  background-color: #1d3557;
-  color: #f1faee;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  border: 5px solid #e63946; /* Border color */
+  border-radius: 15px; /* Rounded corners */
+  background-color: #1d3557; /* Form background color */
+  color: #f1faee; /* Text color */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Shadow around form */
 }
 
 fieldset {
   border: 2px dashed #fcbf49; /* Retro-styled dashed borders */
   padding: 10px;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 10px; /* Rounded borders */
 }
 
 label,
 legend {
-  font-weight: bold;
-  font-size: 1.1rem;
-  color: #ffbe0b;
+  font-weight: bold; /* Bold text */
+  font-size: 1.1rem; /* Larger text */
+  color: #ffbe0b; /* Text color */
 }
 
 input,
@@ -64,50 +65,50 @@ button {
   width: 100%;
   margin: 5px 0;
   padding: 10px;
-  border: 2px solid #ffbe0b;
-  border-radius: 5px;
-  background-color: #2c274b;
-  color: #f1faee;
-  font-size: 1rem;
-  font-family: inherit;
-  outline: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 2px solid #ffbe0b; /* Input border color */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #2c274b; /* Background color */
+  color: #f1faee; /* Text color */
+  font-size: 1rem; /* Font size */
+  font-family: inherit; /* Inherit font family */
+  outline: none; /* Remove outline */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions */
 }
 
 input:focus,
 select:focus,
 textarea:focus {
-  box-shadow: 0 0 5px #ffbe0b;
-  transform: scale(1.02);
+  box-shadow: 0 0 5px #ffbe0b; /* Highlight on focus */
+  transform: scale(1.02); /* Slight zoom on focus */
 }
 
 button {
-  background-color: #06d6a0;
-  color: #1d3557;
-  font-size: 1.2rem;
-  font-weight: bold;
+  background-color: #06d6a0; /* Button color */
+  color: #1d3557; /* Button text color */
+  font-size: 1.2rem; /* Larger button text */
+  font-weight: bold; /* Bold text */
   border: none;
-  border-radius: 5px;
+  border-radius: 5px; /* Rounded corners */
   padding: 15px;
-  cursor: pointer;
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  cursor: pointer; /* Cursor pointer on hover */
+  transition: transform 0.2s ease, background-color 0.2s ease; /* Smooth transitions */
 }
 
 button:hover {
-  background-color: #118ab2;
-  transform: translateY(-3px);
+  background-color: #118ab2; /* Change background color on hover */
+  transform: translateY(-3px); /* Slight lift effect */
 }
 
 h3 {
-  color: #06d6a0;
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+  color: #06d6a0; /* Heading color */
+  text-align: center; /* Centered text */
+  font-size: 1.5rem; /* Larger font size */
+  margin-bottom: 20px; /* Space below heading */
 }
 
 @media screen and (max-width: 600px) {
   form {
-    width: 95%;
-    padding: 15px;
+    width: 95%; /* Full width on small screens */
+    padding: 15px; /* Reduced padding */
   }
 }
